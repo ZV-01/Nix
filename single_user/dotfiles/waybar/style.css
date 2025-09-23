@@ -10,7 +10,7 @@
 
 /* Main bar */
 window#waybar {
-    background: transparent;
+    background: black;
     border-radius: 0px;
     color: #cdd6f4;
     border: 0px solid rgba(205, 214, 244, 0.1);
@@ -91,11 +91,11 @@ tooltip > label {
 #network, #pulseaudio, #power-profiles-daemon, #taskbar,
 #custom-updates, #custom-launcher, #custom-wifi-menu, #custom-notification-toggle,
 #tray, #clock{
-    background: rgb(32, 32, 32);
+    background: rgb(0, 0, 0);
     color: white;
-    padding: 10px 8px;
+    padding: 2px 5px;
     margin: 2px 5px;
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: 0 0 3px black;
     transition: background 0.3s ease;
     transition: box-shadow 0.3s ease;
@@ -105,9 +105,9 @@ tooltip > label {
 
 #custom-launcher {
     padding: 0px;
-    font-size: 34px;
+    font-size: 25px;
     background: transparent;
-    margin-top: 5px;
+    margin: 0px 5px;
     text-shadow: 0 0 3px white, 0 0 2px white, 0 0 2px white, 0 0 1px white;
     transition: text-shadow 0.3s ease;
     box-shadow: none;
@@ -184,10 +184,9 @@ tooltip > label {
     border: 0px solid #a6e3a1;
 }
 #battery.charging {
-    background: rgb(166, 227, 161);
-    color: black;
+    background: transparent;
+    color: turquoise;
     font-weight: 600;
-    animation: charging-pulse 2s infinite;
 }
 #battery.warning:not(.charging) {
     color: #fab387;
@@ -196,12 +195,8 @@ tooltip > label {
 #battery.critical:not(.charging) {
     color: #f38ba8;
     background: rgba(243, 139, 168, 0.1);
-    animation: pulse 0.5s infinite;
 }
-@keyframes charging-pulse {
-    100% { background: rgba(166, 227, 161, 0.6); }
-    50% { background: rgba(166, 227, 161, 0.6); }
-}
+
 
 #network {
     border: 0px solid #89b4fa;
@@ -221,27 +216,27 @@ tooltip > label {
 
 #power-profiles-daemon {
     border: 1px solid #fab387;
+    padding: 0px 10px;
 }
 #power-profiles-daemon.performance {
     color: #f38ba8;
-    border-color: #f38ba8;
+    border-color: transparent;
     background: rgb(57, 0, 16);
 }
 #power-profiles-daemon.balanced {
     color: #89b4fa;
-    border-color: #89b4fa;
+    border-color: transparent;
     background: rgb(0, 12, 32);
 }
 #power-profiles-daemon.power-saver {
     color: #a6e3a1;
-    border-color: #a6e3a1;
+    border-color: transparent;
     background: rgb(4, 49, 0);
 }
 
 #clock {
     background: rgb(33, 33, 33);
     color: rgb(255, 255, 255);
-    margin-bottom: 5px;
 }
 
 /* Custom modules */
