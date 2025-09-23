@@ -96,7 +96,7 @@ tooltip > label {
     padding: 10px 8px;
     margin: 2px 5px;
     border-radius: 5px;
-    box-shadow: 0 0 3px white;
+    box-shadow: 0 0 3px black;
     transition: background 0.3s ease;
     transition: box-shadow 0.3s ease;
 }
