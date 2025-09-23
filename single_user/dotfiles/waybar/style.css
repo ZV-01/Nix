@@ -115,7 +115,7 @@ tooltip > label {
 }
 
 #custom-launcher:hover {
-    text-shadow: 0 0 2px crimson, 0 0 4px crimson, 0 0 5px crimson;
+    text-shadow: 0 0 2px paleturquoise, 0 0 4px paleturquoise, 0 0 5px paleturquoise;
 }
 
 #taskbar {
@@ -289,7 +289,6 @@ tooltip > label {
 #custom-notification-toggle:hover,
 #clock:hover {
     background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 2px crimson, 0 0 4px crimson, 0 0 5px crimson;
     transition: box-shadow 0.3s ease;
 }
 

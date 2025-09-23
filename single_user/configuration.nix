@@ -78,7 +78,7 @@
     vim wget kitty git
     libnotify grim slurp fastfetch
     btop starship gvfs iw
-    lxqt.lxqt-policykit swww rofi-wayland
+    lxqt.lxqt-policykit swww rofi
     waypaper playerctl pulseaudio brightnessctl waybar
     mako pavucontrol gnome-keyring clipman rofimoji   
 
