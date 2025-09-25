@@ -85,14 +85,14 @@
     # Apps
     chromium obs-studio spotify neovim vscode
     xfce.thunar xfce.thunar-volman xfce.tumbler
-    localsend discord
+    localsend discord wpsoffice-cn
 
     # Themes
     adwaita-icon-theme gnome-themes-extra
     bibata-cursors 
 
     # Utilities
-    unzip
+    unzip corefonts
   ];
 
   environment.variables = {
