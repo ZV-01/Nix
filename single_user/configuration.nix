@@ -85,7 +85,7 @@
     # Apps
     chromium obs-studio spotify neovim vscode
     xfce.thunar xfce.thunar-volman xfce.tumbler
-    localsend discord wpsoffice-cn
+    localsend discord wpsoffice
 
     # Themes
     adwaita-icon-theme gnome-themes-extra
