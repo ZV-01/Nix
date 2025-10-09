@@ -68,6 +68,7 @@
   programs.hyprland.enable = true;
   programs.chromium.enable = true;
   programs.sway.enable = true;
+  programs.steam.enable = true;
 
   environment.systemPackages = with pkgs; [
     # Hyprland packages
@@ -87,7 +88,7 @@
     # Apps
     chromium obs-studio spotify neovim vscode
     xfce.thunar xfce.thunar-volman xfce.tumbler
-    localsend discord onlyoffice-bin
+    localsend discord onlyoffice-bin qbittorrent
 
     # Themes
     adwaita-icon-theme gnome-themes-extra

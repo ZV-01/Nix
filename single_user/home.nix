@@ -38,6 +38,13 @@
     };
   };
 
+  # Qt theming
+  qt = {
+    enable = true;
+    platformTheme.name = "gtk";
+    style.name = "Adwaita-Dark";
+  };
+
   # Cursor theme
   home.pointerCursor = {
     name = "Bibata-Modern-Classic";
@@ -65,5 +72,4 @@
     "mako/config".source = inputs.self + "/dotfiles/mako/config";
     "sway/config".source = inputs.self + "/dotfiles/sway/config";
   };
-
 }
