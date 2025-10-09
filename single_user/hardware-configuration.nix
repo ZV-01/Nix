@@ -59,7 +59,8 @@
     intel-media-driver  # VAAPI driver for Intel GPUs (Gen8+)
     intel-vaapi-driver  # Legacy VAAPI driver (mainly pre-Broadwell, but harmless)
     vaapiIntel          # Extra Intel VAAPI implementation
-    libvdpau-va-gl      # VAAPI to VDPAU translation layer
+    vulkan-tools
+    vulkan-validation-layers
   ];
 
 }

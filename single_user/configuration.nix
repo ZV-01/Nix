@@ -35,6 +35,8 @@
     pipewire = {
       enable = true;
       pulse.enable = true;
+      alsa.enable = true;
+      wireplumber.enable = true;
     };
     xserver.xkb.layout = "us";
     libinput.enable = true;  # Enable touchpad support.
@@ -59,13 +61,13 @@
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    xdgOpenUsePortal = true;
   };
 
   programs.firefox.enable = true;
   programs.hyprland.enable = true;
   programs.chromium.enable = true;
   programs.sway.enable = true;
-  programs.steam.enable = true; # steam was being funky so fuck it we ball.
 
   environment.systemPackages = with pkgs; [
     # Hyprland packages
@@ -85,7 +87,7 @@
     # Apps
     chromium obs-studio spotify neovim vscode
     xfce.thunar xfce.thunar-volman xfce.tumbler
-    localsend discord wpsoffice
+    localsend discord onlyoffice-bin
 
     # Themes
     adwaita-icon-theme gnome-themes-extra
