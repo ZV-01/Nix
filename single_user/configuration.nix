@@ -86,9 +86,9 @@
     mako pavucontrol gnome-keyring clipman rofimoji   
 
     # Apps
-    chromium obs-studio spotify neovim vscode
-    xfce.thunar xfce.thunar-volman xfce.tumbler
-    localsend discord onlyoffice-bin qbittorrent
+    chromium obs-studio spotify neovim vscode telegram-desktop
+    xfce.thunar xfce.thunar-volman xfce.tumbler vlc gimp3
+    localsend discord onlyoffice-bin qbittorrent protonvpn-gui
 
     # Themes
     adwaita-icon-theme gnome-themes-extra
