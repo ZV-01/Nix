@@ -88,7 +88,7 @@
     # Apps
     chromium obs-studio spotify neovim vscode telegram-desktop
     xfce.thunar xfce.thunar-volman xfce.tumbler vlc gimp3
-    localsend discord onlyoffice-bin qbittorrent protonvpn-gui
+    localsend discord qbittorrent protonvpn-gui
 
     # Themes
     adwaita-icon-theme gnome-themes-extra
@@ -125,7 +125,7 @@
       inconsolata
       noto-fonts
       noto-fonts-cjk-sans
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       fira-code
       nerd-fonts.fira-code
       recursive

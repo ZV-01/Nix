@@ -5,23 +5,12 @@
   home.homeDirectory = "/home/Haze";
   home.stateVersion = "25.05";
 
-  # Git configuration
-  programs.git = {
-    enable = true;
-    userName = "Amitesh218";
-    userEmail = "amiteshrawal1@gmail.com";
-    extraConfig = {
-      credential.helper = "${pkgs.git.override { withLibsecret = true; }}/bin/git-credential-libsecret";
-      core.editor = "vim";
-      init.defaultBranch = "main";
-    };
-  };
-
   # Shell configuration
   programs.bash = {
     enable = true;
     bashrcExtra = ''
       eval "$(starship init bash)"
+      alias rebuild='sudo nixos-rebuild switch --flake ~/Nix/single_user#Nyx'
     '';
   };
 
