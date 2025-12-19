@@ -97,8 +97,8 @@ tooltip > label {
     margin: 2px 5px;
     border-radius: 2px;
     /*box-shadow: 0 0 3px black;*/
-    transition: background 0.3s ease;
-    transition: box-shadow 0.3s ease;
+    transition: background 1s ease;
+    transition: box-shadow 1s ease;
 }
 
 /* Module-specific customizations */

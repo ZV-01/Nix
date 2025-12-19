@@ -88,7 +88,7 @@
     # Apps
     chromium obs-studio spotify neovim vscode telegram-desktop
     xfce.thunar xfce.thunar-volman xfce.tumbler vlc gimp3
-    localsend discord qbittorrent protonvpn-gui
+    localsend discord qbittorrent protonvpn-gui libreoffice-fresh
 
     # Themes
     adwaita-icon-theme gnome-themes-extra
