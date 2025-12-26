@@ -64,7 +64,6 @@
     xdgOpenUsePortal = true;
   };
 
-  programs.firefox.enable = true;
   programs.hyprland.enable = true;
   programs.chromium.enable = true;
   programs.sway.enable = true;
@@ -86,7 +85,7 @@
     mako pavucontrol gnome-keyring clipman rofimoji   
 
     # Apps
-    chromium obs-studio spotify neovim vscode telegram-desktop
+    chromium brave obs-studio spotify neovim vscode telegram-desktop
     xfce.thunar xfce.thunar-volman xfce.tumbler vlc gimp3
     localsend discord qbittorrent protonvpn-gui libreoffice-fresh
 
