@@ -25,6 +25,8 @@
       name = "Adwaita-dark";
       package = pkgs.adwaita-icon-theme;
     };
+    gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
+    gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
   };
 
   # Qt theming
@@ -41,6 +43,13 @@
     size = 13;
     gtk.enable = true;
     x11.enable = true;
+  };
+
+  # For global dark mode preference
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
   };
 
   # Enable font configuration

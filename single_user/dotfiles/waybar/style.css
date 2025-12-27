@@ -283,6 +283,10 @@ tooltip > label {
     transition: box-shadow 0.3s ease;
 }
 
+#memory:hover {
+    color: white;
+}
+
 /* Responsive tweaks (note: media queries are limited in GTK) 
 @media (max-width: 1366px) {
     #clock {
