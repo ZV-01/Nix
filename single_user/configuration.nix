@@ -31,6 +31,13 @@
     extraGroups = [ "wheel" "networkmanager" "audio" "video" "input" "pipewire"];
   };
 
+  environment.pathsToLink = [ "/share/mime" ]; # fixes mime inconsitency
+
+  environment.sessionVariables = {
+    XDG_DATA_DIRS = [ "$GSETTINGS_SCHEMAS_PATH" ]; 
+    # This ensures the Nix store paths are always appended
+  };
+
   services = {
     pipewire = {
       enable = true;
@@ -60,15 +67,19 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    extraPortals = [
+       pkgs.xdg-desktop-portal-hyprland
+       pkgs.xdg-desktop-portal-gtk # handles file related tasks better than hyprland
+    ];
     xdgOpenUsePortal = true;
+    config.common.default = [ "gtk" ];
   };
 
   programs.hyprland.enable = true;
   programs.chromium.enable = true;
   programs.sway.enable = true;
   programs.steam.enable = true;
-
+  
   environment.systemPackages = with pkgs; [
     # Hyprland packages
     hyprsunset hyprlock
@@ -82,7 +93,8 @@
     btop starship gvfs iw unrar
     lxqt.lxqt-policykit swww rofi
     waypaper playerctl pulseaudio brightnessctl waybar
-    mako pavucontrol gnome-keyring clipman rofimoji   
+    mako pavucontrol gnome-keyring clipman rofimoji
+    shared-mime-info
 
     # Apps
     chromium brave obs-studio spotify neovim vscode telegram-desktop
