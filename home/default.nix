@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ... }:
 let
   # The path to your repo (Adjust "Haze" if your username differs)
-  dotfilesPath = "/home/Haze/nix-config"; 
+  dotfilesPath = "../hosts/Nyx/dotfiles"; 
 in
 {
   imports = [
