@@ -3,45 +3,11 @@ ___
 
 ## Table of Contents
 
-* [Introduction](#introduction)
 * [Installation](#installation)
 * [Configuration](#configuration)
 * [The Nix Language](#the-nix-language)
 * [Home Manager](#home-manager)
 * [Flakes](#flakes)
-
-## Introduction
-
-**NixOS** is a Linux distribution built on top of the Nix package manager. It was developed to bring the power of *declarative configuration* and *functional system management* to the operating system level.
-
----
-
-### ❄️ The NixOS Philosophy
-
-The philosophy of NixOS revolves around **reproducibility** and **stability**, aiming to provide a virtually *“unbreakable”* system through a **declarative** and **functional** approach to system management.
-
-In simpler terms, you can declare your **entire system** in just a few Nix configuration files — including:
-
-* System packages
-* Environment variables
-* Dotfiles and personal settings
-* Specific package versions
-* Even your hardware configuration
-
-This makes it possible to **replicate** your exact system on any machine with ease — ideal for backup, testing, or sharing your setup.
-
----
-
-### ❄️ What Makes NixOS Different?
-
-Key points that set NixOS apart from traditional Linux distributions are:
-
-* **Declarative system config**: You describe *what* the system should look like, not *how* to get there.
-* **Atomic upgrades and rollbacks**: You can switch between system generations and undo changes safely.
-* **Reproducibility**: Your config can be version-controlled and deployed across machines.
-* **Isolated environments**: No accidental overwrites or “dependency hell.”
-* **Per-user packages**: Unlike traditional distros, Nix allows users to install packages **just for themselves**.
-* **Side-by-side versions**: Install multiple versions of the same package — useful for dev environments.
 
 ## Installation
 
