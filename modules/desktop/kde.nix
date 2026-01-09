@@ -13,10 +13,10 @@
     # Utilities that fit KDE
     kitty               # Terminal
     firefox             # Browser
-    kate                # Text Editor
-    spectacle           # Screenshot
-    dolphin             # File Manager
-    ark                 # Archive Manager
+    # kate                # Text Editor
+    # spectacle           # Screenshot
+    # dolphin             # File Manager
+    # ark                 # Archive Manager
     
     # Media
     vlc
