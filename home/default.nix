@@ -16,7 +16,7 @@ in
   # 1. Clone your dotfiles into ~/nix-config/dotfiles
   # 2. Link them here
   xdg.configFile = {
-    "kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dotfiles/kitty/kitty.conf";
+    "kitty/kitty.conf".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/kitty/kitty.conf";
     # "starship.toml".source = config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/dotfiles/starship.toml";
   };
   
