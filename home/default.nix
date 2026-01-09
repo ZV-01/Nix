@@ -5,7 +5,7 @@ let
 in
 {
   imports = [
-    ./Haze/git.nix
+    # ./Haze/git.nix
   ];
 
   home.username = "Haze";
