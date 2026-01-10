@@ -1,11 +1,12 @@
 { config, pkgs, inputs, ... }:
 let
   # The path to your repo (Adjust "Haze" if your username differs)
-  dotfilesPath = "./Haze/dotfiles"; 
+  dotfilesPath = "/home/Haze/Nix-config/dotfiles"; 
 in
 {
   imports = [
     ./Haze/git.nix
+    ./Haze/shell.nix
   ];
 
   home.username = "Haze";

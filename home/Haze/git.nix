@@ -2,13 +2,10 @@
 {
   programs.git = {
     enable = true;
-    
-    # Replace with your details
-    userName = "Zettanox";
-    userEmail = "amiteshrawal1@gmail.com";
-    
-    # Optional: Modern defaults
-    extraConfig = {
+
+    settings = {
+      user.name = "Zettanox";
+      user.email = "amiteshrawal1@gmail.com";
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
     };

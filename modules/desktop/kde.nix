@@ -19,6 +19,8 @@
     
     # Media
     vlc
+    starship
+    antigravity-fhs
   ];
   
   # Remove pre-installed bloat (Optional)
