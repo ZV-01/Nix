@@ -7,12 +7,11 @@
 
   # KDE Packages & Polonium
   environment.systemPackages = with pkgs; [
-    # The Tiling Script
-    polonium
     
     # Utilities that fit KDE
     kitty               # Terminal
-    firefox             # Browser
+    firefox             # Browse
+    vscode
     # kate                # Text Editor
     # spectacle           # Screenshot
     # dolphin             # File Manager
@@ -20,7 +19,6 @@
     
     # Media
     vlc
-    spotify
   ];
   
   # Remove pre-installed bloat (Optional)
