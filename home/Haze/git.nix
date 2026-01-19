@@ -8,6 +8,7 @@
       user.email = "amiteshrawal1@gmail.com";
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
+      credential.helper = "store";
     };
   };
 }
